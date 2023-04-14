@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines a file-appending fn"""
+"""Defines a file-appending fn"""
 
 
 def append_write(filename="", text=""):
