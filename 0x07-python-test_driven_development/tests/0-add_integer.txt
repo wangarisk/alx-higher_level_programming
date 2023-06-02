@@ -1,0 +1,25 @@
+Doctest for the add_integer function:
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(10, 5)
+15
+
+>>> add_integer(-5, 6)
+1
+
+>>> add_integer(6.71, 3.0)
+9
+
+>>> add_integer(13.1, 10.2)
+23
+
+>>> add_integer('sny', 10)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(15, 'name')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
