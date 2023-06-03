@@ -1,0 +1,54 @@
+Doctest for the function matrix_divided:
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [
+...		[3, 6, 9],
+...		[9, 9, 6]
+... ]
+
+>>> matrix_divided(matrix, 3)
+[[1.0, 2.0, 3.0], [3.0, 3.0, 2.0]]
+
+>>> matrix = [
+...		[12.0, 10.0, 4.0],
+...		[6.0, 14.0, 2.0]
+... ]
+
+>>> matrix_divided(matrix, 2)
+[[6.0, 5.0, 2.0], [3.0, 7.0, 1.0]]
+
+>>> matrix = [
+...		[3, 5, 7],
+...		[5, 5, 9]
+... ]
+
+>>> matrix_divided(matrix, 2)
+[[1.5, 2.5, 3.5], [2.5, 2.5, 4.5]]
+
+>>> matrix = [
+... 		[6, 8, 4],
+... 		[2, 4, 4]
+... ]
+
+>>> matrix_divided(matrix, 'sny')
+Traceback (most recent call last)
+TypeError: div must be a number
+
+>>> matrix = [
+... 		[2, 4, 4],
+...		[8, 2, 1]
+... ]
+
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last)
+ZeroDivisionError: division by zero
+
+>>> matrix = [
+... 		[10, 2, 8.1],
+...		[11.2, 6]
+... ]
+
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last)
+TypeError: Each row of the matrix must have the same size
