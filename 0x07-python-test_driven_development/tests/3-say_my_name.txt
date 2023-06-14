@@ -1,0 +1,9 @@
+Doctest for the function say_my_name:
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Sponge", "Bob")
+My name is Sponge Bob
+
+>>> say_my_name(25, "Sponge")
+TypeError: first_name must be a string
